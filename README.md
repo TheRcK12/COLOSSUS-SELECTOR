@@ -12,6 +12,7 @@ Dessa maneira, o COLOSSUS deixa de ser apenas um software de processamento de da
 ________________________________________
 
 1.2 Objetivos Específicos
+
 Para alcançar o objetivo geral proposto, foram definidos diversos objetivos específicos durante a fase de levantamento de requisitos.
 O primeiro deles consiste na criação de um mecanismo universal de leitura de arquivos capaz de reconhecer automaticamente diferentes formatos de entrada, priorizando arquivos Parquet devido ao seu elevado desempenho, mantendo compatibilidade com planilhas Excel e arquivos CSV.
 Outro objetivo fundamental foi desenvolver um sistema capaz de processar simultaneamente múltiplas bases comerciais distribuídas em diferentes diretórios, permitindo que grandes volumes de dados sejam consolidados automaticamente durante uma única execução.
@@ -20,6 +21,7 @@ Também foi estabelecida como prioridade a implementação de mecanismos intelig
 ________________________________________
 
 2. Proposta do Sistema
+   
 O COLOSSUS foi idealizado para atuar como o núcleo central de processamento de dados das operações comerciais.
 Sua proposta consiste em substituir uma série de processos manuais, normalmente executados utilizando planilhas eletrônicas e pequenos scripts independentes, por um fluxo único, automatizado e altamente otimizado.
 Antes do desenvolvimento do sistema, era comum que diferentes profissionais executassem etapas distintas da preparação dos mailings.
@@ -33,6 +35,7 @@ Sua arquitetura organiza todo o processamento em um pipeline inteligente, onde c
 ________________________________________
 
 3. Planejamento do Projeto
+   
 O desenvolvimento do COLOSSUS foi conduzido seguindo uma metodologia de evolução contínua, onde cada nova funcionalidade foi incorporada de maneira incremental, permitindo que o sistema fosse constantemente validado durante sua construção. Diferentemente de projetos tradicionais, cuja implementação ocorre somente após a conclusão completa do planejamento, o COLOSSUS passou por sucessivas fases de aprimoramento, sempre priorizando estabilidade, desempenho e compatibilidade com versões anteriores.
 Durante todo o desenvolvimento buscou-se construir uma arquitetura suficientemente flexível para suportar futuras expansões sem necessidade de reescrever grandes partes do sistema. Essa decisão permitiu que novas funcionalidades fossem incorporadas ao longo do tempo, acompanhando as necessidades operacionais identificadas durante a utilização prática do software.
 O planejamento também considerou aspectos relacionados ao desempenho computacional. Desde as primeiras versões ficou evidente que o crescimento constante das bases comerciais exigiria uma arquitetura capaz de processar dezenas de milhões de registros utilizando recursos computacionais limitados. Dessa forma, diversas decisões arquitetônicas foram tomadas visando reduzir o consumo de memória RAM, aumentar a velocidade de leitura dos arquivos e minimizar o tempo total necessário para geração dos mailings.
@@ -43,7 +46,8 @@ Todas essas decisões foram tomadas considerando não apenas as necessidades atu
 
 ________________________________________
 
-4.1 Concepção
+4. Concepção
+
 A fase de concepção teve como principal objetivo compreender profundamente os problemas enfrentados pelas operações comerciais durante a preparação de mailings.
 Inicialmente foram analisadas diversas rotinas executadas manualmente pelas equipes responsáveis pelo tratamento das bases de dados. Essa análise permitiu identificar gargalos operacionais que consumiam grande quantidade de tempo e estavam sujeitos a erros humanos.
 Observou-se que a preparação de uma única campanha exigia a realização de inúmeras tarefas repetitivas, como leitura individual de diferentes arquivos, padronização de colunas, validação de documentos, organização de telefones, eliminação de registros duplicados, cruzamentos com listas de bloqueio e geração manual de relatórios.
@@ -54,7 +58,8 @@ Com base nessas observações, definiu-se que o COLOSSUS deveria atuar como um s
 
 ________________________________________
 
-4.3 Construção
+4.1 Construção
+
 A fase de construção corresponde ao período de implementação efetiva do sistema.
 Durante essa etapa, cada módulo anteriormente especificado foi desenvolvido individualmente, sendo posteriormente integrado aos demais componentes da plataforma.
 Inicialmente foram implementados os mecanismos responsáveis pela leitura dos arquivos de entrada.
