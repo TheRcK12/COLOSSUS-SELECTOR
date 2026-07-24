@@ -1,5 +1,6 @@
 # COLOSSUS-SELECTOR
 1. Objetivos
+   
 1.1 Objetivo Geral
 O principal objetivo do projeto COLOSSUS consiste no desenvolvimento de uma plataforma desktop de alto desempenho destinada ao processamento inteligente de grandes volumes de dados comerciais, automatizando integralmente a preparação de bases utilizadas em operações de telemarketing, cobrança, retenção, relacionamento e vendas.
 O sistema foi concebido para eliminar processos manuais repetitivos, reduzir significativamente o tempo necessário para preparação de mailings e aumentar a confiabilidade das informações utilizadas pelas equipes comerciais.
@@ -8,9 +9,7 @@ Outro objetivo importante consiste em fornecer aos gestores uma visão detalhada
 O projeto também foi desenvolvido pensando em sua evolução contínua. Sua arquitetura modular possibilita que novos filtros, novas regras de negócio, novos relatórios e novas funcionalidades sejam incorporados futuramente sem comprometer a estabilidade do sistema.
 Dessa maneira, o COLOSSUS deixa de ser apenas um software de processamento de dados e passa a atuar como uma plataforma de inteligência operacional, capaz de auxiliar diretamente na tomada de decisões estratégicas relacionadas às campanhas comerciais.
 
-
 ________________________________________
-
 
 1.2 Objetivos Específicos
 Para alcançar o objetivo geral proposto, foram definidos diversos objetivos específicos durante a fase de levantamento de requisitos.
@@ -18,9 +17,7 @@ O primeiro deles consiste na criação de um mecanismo universal de leitura de a
 Outro objetivo fundamental foi desenvolver um sistema capaz de processar simultaneamente múltiplas bases comerciais distribuídas em diferentes diretórios, permitindo que grandes volumes de dados sejam consolidados automaticamente durante uma única execução.
 Também foi estabelecida como prioridade a implementação de mecanismos inteligentes de validação capazes de identificar inconsistências presentes nos dados recebidos.
 
-
 ________________________________________
-
 
 2. Proposta do Sistema
 O COLOSSUS foi idealizado para atuar como o núcleo central de processamento de dados das operações comerciais.
@@ -33,7 +30,6 @@ Além do elevado tempo de processamento, existia uma grande possibilidade de fal
 O COLOSSUS foi desenvolvido justamente para eliminar esse problema.
 Sua arquitetura organiza todo o processamento em um pipeline inteligente, onde cada etapa possui uma responsabilidade específica.
 
-
 ________________________________________
 
 3. Planejamento do Projeto
@@ -45,7 +41,6 @@ A modularização do sistema também foi definida como um requisito estratégico
 Além disso, o planejamento contemplou a adoção de tecnologias modernas voltadas ao processamento analítico de dados, substituindo soluções convencionais por ferramentas mais eficientes. A utilização do DuckDB como mecanismo principal de processamento, aliada ao uso de arquivos Parquet como formato preferencial de armazenamento, constitui um dos principais diferenciais técnicos do COLOSSUS.
 Todas essas decisões foram tomadas considerando não apenas as necessidades atuais das operações comerciais, mas também o potencial crescimento do sistema nos próximos anos.
 
-
 ________________________________________
 
 4.1 Concepção
@@ -56,7 +51,6 @@ Além disso, verificou-se que diferentes fornecedores utilizavam estruturas comp
 Outro problema identificado durante essa etapa foi o crescimento constante do volume de informações manipuladas pelas operações. Em muitos casos, uma única campanha podia envolver dezenas de milhões de registros distribuídos entre centenas de arquivos diferentes.
 Ferramentas convencionais, como planilhas eletrônicas, apresentavam limitações severas de desempenho nessas situações, tornando inviável a continuidade do modelo de processamento utilizado anteriormente.
 Com base nessas observações, definiu-se que o COLOSSUS deveria atuar como um sistema centralizador, responsável por automatizar todas as etapas envolvidas na preparação das bases comerciais.
-
 
 ________________________________________
 
